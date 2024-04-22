@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="315.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="donations.controllers.StatisticsController">
+
+        <children>
+            <!-- Titlul "Statistics" -->
+            <Text fx:id="textErrorMessage" layoutX="134.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistics" wrappingWidth="106.79998016357422">
+
+            <font>
+            <Font size="31.0" />
+         </font></Text>
+
+            <!-- Tabelul pentru afișarea numelui și sumei -->
+            <TableView fx:id = "tableView" layoutX="38.0" layoutY="41.0" prefHeight="200" prefWidth="311.0">
+                <columns>
+                    <TableColumn fx:id ="colDescription" prefWidth="201.99996948242188" text="Case" />
+                    <TableColumn fx:id ="colValue" prefWidth="107.0" text="Amount" />
+                </columns>
+            </TableView>
+
+            <!-- Butonul pentru deconectare (Log Out) -->
+            <Button fx:id="buttonLogout" layoutX="38.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleLogout" text="Log Out" />
+
+            <!-- Butonul pentru a face o donație (Make a Donation) -->
+            <Button fx:id="buttonDonation" layoutX="241.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleMakeDonation" text="Make a Donation" />
+        </children>
+    </AnchorPane>

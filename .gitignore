@@ -1,0 +1,61 @@
+<<<<<<< HEAD
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+=======
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+>>>>>>> 5b925c2c14e1ca3b7230e37baa54f9fd8e392cd4
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+<<<<<<< HEAD
+=======
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+>>>>>>> 5b925c2c14e1ca3b7230e37baa54f9fd8e392cd4
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+<<<<<<< HEAD
+=======
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+>>>>>>> 5b925c2c14e1ca3b7230e37baa54f9fd8e392cd4
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+<<<<<<< HEAD
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+=======
+>>>>>>> 5b925c2c14e1ca3b7230e37baa54f9fd8e392cd4
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store

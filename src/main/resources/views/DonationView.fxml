@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="donations.controllers.DonationController">
+
+    <!-- Titlul "Donation" -->
+    <Text fx:id="textErrorMessage" layoutX="437.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donation" wrappingWidth="106.79998016357422">
+
+    <font>
+         <Font size="25.0" />
+      </font></Text>
+
+    <!-- Butonul "Find" -->
+    <Button fx:id="buttonFind" layoutX="14.0" layoutY="26.0" prefHeight="25.0" prefWidth="68.0" mnemonicParsing="false" onAction="#handleFind" text="Find" />
+
+    <!-- Textbox-ul pentru căutare -->
+    <TextField fx:id="textFieldPart" layoutX="105.0" layoutY="26.0" prefHeight="25.0" prefWidth="110.0" />
+
+    <!-- Tabelul pentru afișarea datelor -->
+    <TableView fx:id="tableViewDonor" layoutX="14.0" layoutY="66.0" prefHeight="240" prefWidth="336.0">
+        <columns>
+            <TableColumn fx:id ="colName" prefWidth="104.0" text="Name" />
+            <TableColumn fx:id ="colTelephone" prefWidth="91.99996948242188" text="Telephone" />
+            <TableColumn fx:id ="colAddress" prefWidth="156.0" text="Address" />
+        </columns>
+    </TableView>
+
+    <!-- Text și Textbox pentru nume -->
+    <Text layoutX="367.0" layoutY="138.0" text="Nume" />
+    <TextField fx:id="textFieldName" layoutX="404.0" layoutY="121.0" prefHeight="25.0" prefWidth="186.0" />
+
+    <!-- Text și Textbox pentru telefon -->
+    <Text layoutX="363.0" layoutY="168.0" text="Telefon" />
+    <TextField fx:id="textFieldTelephone" layoutX="404.0" layoutY="150.0" prefHeight="25.0" prefWidth="186.0" />
+
+    <!-- Text și Textbox pentru adresa -->
+    <Text layoutX="364.0" layoutY="197.0" text="Adresa" />
+    <TextField fx:id="textFieldAddress" layoutX="404.0" layoutY="180.0" prefHeight="25.0" prefWidth="186.0" />
+
+    <!-- Dropdown pentru casă -->
+    <Text layoutX="371.0" layoutY="236.0" text="Case" />
+    <ComboBox fx:id="comboBoxCase" layoutX="404.0" layoutY="219.0" prefHeight="25.0" prefWidth="186.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <!-- Text și Textbox pentru sumă (Amount) -->
+    <Text layoutX="361.0" layoutY="280.0" text="Amount" />
+    <TextField fx:id="textFieldAmount" layoutX="404.0" layoutY="263.0" prefHeight="25.0" prefWidth="186.0" />
+
+    <!-- Butonul "Complete" -->
+    <Button fx:id="buttonComplete" layoutX="444.0" layoutY="342.0" prefHeight="33.0" prefWidth="120.0" mnemonicParsing="false" onAction="#handleComplete" text="Complete" />
+
+</AnchorPane>
